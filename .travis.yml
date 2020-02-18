@@ -6,7 +6,6 @@ env:
   - RELEASE_TAG="release-$TRAVIS_BUILD_NUMBER"
 if: tag IS blank
 
-
 jobs:
   include:
     - stage: build and publish
@@ -19,6 +18,7 @@ jobs:
         - git config --local user.email "travis@example.com"
         - git tag -f $RELEASE_TAG
       deploy:
+        edge: true
         provider: releases
         api_key: $GITHUB_OAUTH_TOKEN
         file: "build/libs/pal-tracker.jar"
