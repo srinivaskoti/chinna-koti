@@ -14,7 +14,7 @@ public class WelcomeController {
 
     public WelcomeController( @Value("${welcome.message}") String message)
     {
-        System.out.println("The Value is : "+message);
+        System.out.println("The Env msgs  is : "+message);
         this.message=message;
     }
     @GetMapping("/")
