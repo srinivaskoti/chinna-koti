@@ -3,7 +3,7 @@ package io.pivotal.pal.tracker;
 import java.time.LocalDate;
 import java.util.*;
 
-public class InMemoryTimeEntryRepository implements TimeEntryRepository {
+public class  InMemoryTimeEntryRepository implements TimeEntryRepository {
 
     //List<TimeEntry> list = new ArrayList<TimeEntry>();
     Long counter = 1L;
