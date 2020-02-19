@@ -67,6 +67,5 @@ public class  InMemoryTimeEntryRepository implements TimeEntryRepository {
         System.out.println(timeEntryRepository);*/
         timeEntryRepository.remove(timeEntryIdLoc);
 
-
     }
 }
