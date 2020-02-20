@@ -17,6 +17,7 @@ public class WelcomeController {
         System.out.println("The Env msgs  is : "+message);
         this.message=message;
     }
+
     @GetMapping("/")
     public String sayHello(){
         return message;
